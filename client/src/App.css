@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: black;
+  color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  background: #111;
+}
+
+.logo-box {
+  display: flex;
+  align-items: center;
+}
+
+.logo-box img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.header a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+  background: linear-gradient(to right, #111, #000);
+}
+
+.hero button {
+  padding: 12px 30px;
+  background: linear-gradient(to right, orange, red);
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.pricing {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.pricing-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.card {
+  background: #111;
+  padding: 40px;
+  border-radius: 15px;
+  width: 250px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px orange;
+}
+
+.card button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: linear-gradient(to right, orange, red);
+  border: none;
+  cursor: pointer;
+}
+
+.payment-page {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.payment-page button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: linear-gradient(to right, orange, red);
+  border: none;
+  cursor: pointer;
+}
+
+.footer {
+  background: #111;
+  padding: 40px;
+  text-align: center;
+  margin-top: 50px;
+}

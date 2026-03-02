@@ -1,0 +1,301 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #0f0f0f;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: #141414;
+}
+
+.navbar a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  color: #00c2ff;
+}
+
+.page {
+  padding: 60px;
+  text-align: center;
+}
+
+.pricing-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  background: #1f1f1f;
+  padding: 30px;
+  border-radius: 10px;
+  width: 300px;
+  margin: 20px auto;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.btn-primary {
+  background: #00c2ff;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.btn-outline {
+  border: 1px solid #00c2ff;
+  background: none;
+  color: #00c2ff;
+  padding: 8px 15px;
+  border-radius: 6px;
+}
+
+.form-container {
+  padding: 50px;
+  text-align: center;
+}
+
+input, textarea {
+  width: 300px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero-content h1 {
+  font-size: 42px;
+}
+
+.hero-content p {
+  margin: 20px 0;
+  color: #aaa;
+}
+
+.hero-buttons {
+  margin-top: 30px;
+}
+
+.hero-buttons a {
+  margin: 0 10px;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  gap: 30px;
+}
+
+.feature-card {
+  background: #1f1f1f;
+  padding: 25px;
+  border-radius: 10px;
+  width: 250px;
+}
+
+.auth-container {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.auth-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.auth-container input {
+  width: 300px;
+  margin: 10px;
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+}
+
+.link {
+  color: #00c2ff;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+
+button {
+  text-decoration: none;
+}
+.btn-primary {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  border: none;
+  padding: 12px 28px;
+  border-radius: 30px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 114, 255, 0.4);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(0, 114, 255, 0.6);
+}
+
+.btn-outline {
+  border: 2px solid #00c6ff;
+  background: transparent;
+  padding: 10px 26px;
+  border-radius: 30px;
+  color: #00c6ff;
+  font-weight: 600;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-outline:hover {
+  background: #00c6ff;
+  color: black;
+}
+/* ===== Requirement Page ===== */
+
+.req-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 85vh;
+  padding: 20px;
+  background: #0f0f0f; /* optional for better contrast */
+}
+
+.req-card {
+  background: rgba(30, 30, 30, 0.9);
+  backdrop-filter: blur(10px);
+  padding: 40px 30px; /* adjusted for better spacing */
+  border-radius: 20px;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+.req-card h2 {
+  margin-bottom: 5px;
+  font-size: 22px;
+}
+
+.req-sub {
+  color: #aaa;
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 14px 14px;
+  background: #141414;
+  border: 1px solid #333;
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+  outline: none;
+  resize: none; /* prevent textarea resize */
+}
+
+.input-group label {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  color: #888;
+  font-size: 15px;
+  transition: 0.2s ease all;
+  pointer-events: none;
+  background: transparent;
+}
+
+/* When input is focused or has value */
+.input-group input:focus + label,
+.input-group textarea:focus + label,
+.input-group input:not(:placeholder-shown) + label,
+.input-group textarea:not(:placeholder-shown) + label {
+  top: -8px;
+  left: 10px;
+  font-size: 12px;
+  background: #1e1e1e;
+  padding: 0 6px;
+  color: #00c6ff;
+}
+
+/* Focus border */
+.input-group input:focus,
+.input-group textarea:focus {
+  border-color: #00c6ff;
+}
+
+/* Button styling */
+.btn-primary {
+  margin-top: 10px;
+  width: 325px;
+  padding: 14px;
+  background: #00c6ff;
+  border: none;
+  border-radius: 10px;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #00a3d9;
+}
+.req-card,
+.input-group input,
+.input-group textarea,
+.btn-primary {
+  box-sizing: border-box;
+}
+.req-card {
+  width: 100%;
+  max-width: 450px; /* card won’t grow beyond 450px */
+  padding: 40px 30px;
+  border-radius: 20px;
+  background: rgba(30,30,30,0.9);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+.input-group input,
+.input-group textarea {
+  width: 100%; /* now stays inside the card */
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #333;
+  background: #141414;
+  color: white;
+  font-size: 15px;
+  outline: none;
+  box-sizing: border-box; /* key fix */
+}
